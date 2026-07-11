@@ -10,9 +10,9 @@ class NaiveBayes(Classifier):
         super().__init__(self.conf)
 
     def initialize(self, subtype='multinomial'):
-        if subtype is 'complement':
+        if subtype == 'complement':
             self.clf = ComplementNB()
-        elif subtype is 'multinomial':
+        elif subtype == 'multinomial':
             self.clf = MultinomialNB()
         else:
             print("Unknown Naive-Bayes type")

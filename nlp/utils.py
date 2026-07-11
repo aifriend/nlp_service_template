@@ -62,11 +62,11 @@ def split_by_size(text, max_size=10):
         if len(buffer) + len(element) < max_size:
             buffer = buffer + ' ' + element
         else:
-            if buffer is not '':
+            if buffer != '':
                 full_text.append(buffer.strip())
             buffer = element
 
-    if buffer is not '':
+    if buffer != '':
         full_text.append(buffer.strip())
 
     print(full_text)

@@ -124,7 +124,7 @@ class Configuration:
     def load_dict(self):
         print(os.getcwd())
         dict_file = ClassFile.get_text(self.dictionary).split('\n')
-        dict_file = filter(lambda x: (x is not ''), dict_file)
+        dict_file = filter(lambda x: (x != ''), dict_file)
         spa_dict = list(map(lambda x: x.lower(), dict_file))
         self.spa_dict = spa_dict
 

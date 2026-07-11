@@ -2,7 +2,7 @@ from Levenshtein import StringMatcher
 
 
 def check(word, dictionary):
-    if word is None or word is '' or str(word)[0].isnumeric():
+    if word is None or word == '' or str(word)[0].isnumeric():
         return []
     # if str(word)[0].isupper():
     #     return [' ']
@@ -14,7 +14,7 @@ def check(word, dictionary):
 
 
 def check_exact(word, dictionary):
-    if word is None or word is '' or str(word)[0].isnumeric():
+    if word is None or word == '' or str(word)[0].isnumeric():
         return []
     x = str(word).lower()
     if x in dictionary:
