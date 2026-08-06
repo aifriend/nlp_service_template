@@ -97,7 +97,7 @@ pytz==2019.3
 PyYAML==5.3
 recordtype==1.3
 regex==2020.1.8
-requests==2.22.0
+requests==2.33.0
 scikit-learn==0.22.1
 scipy==1.4.1
 six==1.13.0
